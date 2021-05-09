@@ -25,11 +25,14 @@ body{
   .img6 { background-image: url("min3.png"); height: 100%; }
   
 @media and screen(max-width:600px){
-    #projectDiv{
+    .img4{
         height:200%;
     }
     .img5{
         height: 240%;
+    }
+    .img3{
+        height:135%;
     }
 }
 
