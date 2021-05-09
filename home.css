@@ -25,11 +25,6 @@ body{
   .img6 { background-image: url("min3.png"); height: 100%; }
 
 @media and screen(max-width:600px){
-    .img5{
-        height: 240%;
-    }
-}
-@media and screen(max-width:600px){
     .img3{
         height:135%;
     }
@@ -147,9 +142,14 @@ body{
   color: white;
 }
 
+@media screen and (max-width:300px){
+    .navbar{
+        margin-left:2px;
+    }
+}
 @media screen and (max-width:600px){
   .navbar{
-    margin-left: 1px;
+    margin-left: 6px;
     font-size: 13px;
   }
 }
@@ -311,6 +311,9 @@ body{
   font-weight: bolder;
 }
 /*interpersonal skills*/
+.flip-box-Main{
+    height:50%;
+}
 .flip-box {
   background-color: transparent;
   width: 300px;
@@ -401,10 +404,6 @@ button:hover, a:hover {
     width: 50%;
     margin-left:0px;
   }
-  .img5{
-    height:200%;
-  }
-  
 }
 
 .heading{
