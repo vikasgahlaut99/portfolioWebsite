@@ -83,6 +83,9 @@ function showMore(a){
       button.innerHTML = "more";
       img.style.height = "200px";
       button.style.marginTop="30px";
+        if(window.innerWidth <=600){
+      heading.style.fontSize="14px";
+      }
     }
 }
 
