@@ -44,10 +44,10 @@ body{
     
   }
   @media screen and (max-width:600px){
-      .bg-text{
-          border:0px;
-      }
+    .bg-text{
+  border:0px ;
 }
+  }
   #myImage {
     display: flex;
     position: relative;
