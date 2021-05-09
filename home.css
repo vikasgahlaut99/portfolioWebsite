@@ -63,7 +63,7 @@ body{
       height:115%;
     }
     #secondDiv{
-      height:80%;
+      height:50%;
     }
   }
 
@@ -172,7 +172,7 @@ body{
   width:95%;
 }
 .txtWorkEx{
-  width:90%;
+  width:100%;
 }
 #workDiv{
   padding:10px;
