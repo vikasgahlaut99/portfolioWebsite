@@ -24,7 +24,11 @@ body{
   .img5 { background-image: url("background.jpg"); background-color: #333; height:150%}
   .img6 { background-image: url("min3.png"); height: 100%; }
   
-  
+@media and screen(max-width:600px){
+    .img4{
+        height:180%;
+    }
+}
   /* Position text in the middle of the page/image */
   .bg-text {
     color: white;
