@@ -28,8 +28,13 @@ body{
     #projectDiv{
         height:200%;
     }
-    .img5{
-        height:220%;
+}
+
+@media and screen(max-width:600px){
+    #skillBox{
+        height:70%;}
+    #skillBar{
+        height:30%;
     }
 }
   /* Position text in the middle of the page/image */
