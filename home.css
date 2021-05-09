@@ -28,6 +28,9 @@ body{
     .img3{
         height:135%;
     }
+    .img4{
+        height:200%;
+    }
 }
   /* Position text in the middle of the page/image */
   .bg-text {
@@ -251,7 +254,7 @@ body{
 .moreButton:hover{
   background-color: rgb(75, 72, 72);
 }
-@media screen and (max-width : 600px)
+@media screen and (max-width : 800px)
 {
   .project{
     width:45%;
