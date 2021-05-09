@@ -20,13 +20,16 @@ body{
   .img1 { background-image: url("backgroundimage1.gif"); height:104%; }
   .img2 { background-image: url("backgroundimage.png");  margin-top:-2%;}
   .img3 { background-image: url("min4.jpg"); height:125%;}
-  .img4 { background-image: url("contactDivBg.jpg"); height:180%}
+  .img4 { background-image: url("contactDivBg.jpg"); height:160%}
   .img5 { background-image: url("background.jpg"); background-color: #333; height:170%}
   .img6 { background-image: url("min3.png"); height: 100%; }
   
 @media and screen(max-width:600px){
     #projectDiv{
         height:200%;
+    }
+    .img5{
+        height: 240%;
     }
 }
 
