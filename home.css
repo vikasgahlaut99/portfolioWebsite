@@ -24,7 +24,7 @@ body{
   .img5 { background-image: url("background.jpg"); background-color: #333; height:170%}
   .img6 { background-image: url("min3.png"); height: 100%; }
 
-@media and screen(max-width:600px){
+@media screen and (max-width:600px){
     .img3{
         height:135%;
     }
