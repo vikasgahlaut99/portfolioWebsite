@@ -23,12 +23,7 @@ body{
   .img4 { background-image: url("contactDivBg.jpg"); height:160%}
   .img5 { background-image: url("background.jpg"); background-color: #333; height:170%}
   .img6 { background-image: url("min3.png"); height: 100%; }
-  
-@media and screen(max-width:600px){
-    .img4{
-        height:200%;
-    }
-}
+
 @media and screen(max-width:600px){
     .img5{
         height: 240%;
@@ -261,6 +256,7 @@ body{
   .project{
     width:45%;
     height:280px;
+    margin-top:1%;
   }
   .pcontent{
     display:none;
