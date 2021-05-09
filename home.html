@@ -1,0 +1,399 @@
+<html>
+<title>
+  Vikas' Portfolio
+</title>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+    integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+    integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous">
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="home.js">
+
+  </script>
+  <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+  <link rel="stylesheet" type="text/css" href="home.css">
+</head>
+
+<body>
+
+  <div id="navbarMain">
+    <span class="navbar" id="home">Home</span>
+    <span class="navbar" id="work">Work Experience</span>
+    <span class="navbar" id="projects">Projects</span>
+    <span class="navbar" id="skills">Skills</span>
+    <span class="navbar contactme" id="contact">Contact Me</span>
+  </div>
+
+  <div class="bg-image img1">
+    <div class="bg-text" id="textTop">
+      Let's Go
+    </div>
+  </div>
+
+  <div class="img2">
+    <div id="name" class="content">
+      <h1>Hi! I'm Vikas Gahlaut</h1>
+    </div>
+    <div class="bg-image" id="secondDiv">
+      <div id="myImage">
+        <div class="mySlides">
+          <img src="myImage1.jpeg" alt="my Image" style="width: 100%;height: 100%; border-radius: 20%;">
+        </div>
+        <div class="mySlides">
+          <img src="myImage4.jpeg" alt="my Image" style="width: 100%;height: 100%; border-radius: 20%;">
+        </div>
+        <div class="mySlides">
+          <img src="myImage2.jpeg" alt="my Image" style="width: 100%;height: 100%; border-radius: 20%;">
+        </div>
+        <div class="mySlides">
+          <img src="myImage3.jpeg" alt="my Image" style="width: 100%;height: 100%; border-radius: 20%;">
+        </div>
+
+      </div>
+      <script>
+        //photo slider 
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {
+            slideIndex = 1
+          }
+          slides[slideIndex - 1].style.display = "block";
+          if (screen.width >= 600) {
+            if (slideIndex == 1 || slideIndex == 3) {
+              document.getElementById('myImage').style.width = "30%";
+              document.getElementById('myImage').style.marginLeft = "10%";
+            } else {
+              document.getElementById('myImage').style.width = "45%";
+              document.getElementById('myImage').style.marginLeft = "5%";
+            }
+          } else {
+            document.getElementById('myImage').style.width = "80%";
+            document.getElementById('myImage').style.height = "60%";
+            document.getElementById('myImage').style.marginLeft = "10%";
+          }
+
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+      </script>
+      <div id="myText">
+        <p>
+          <b>“It’s fine to celebrate success, but it is more <br>important to heed the lessons of failure.”
+          </b><br>-Bill Gates<br><br>
+
+          <b>Welcome to my portfolio</b><br>
+          About me:<br>
+          I live in India and I'm a fresher in software I've started to code in my bachelors only, I've a bachelors of engineering
+          in computer science engineering. I'm currently working and enhancing my skills as a SDE trainee.
+          This is my portfolio website where I've put my effort to make my resume website to show a few skills that I possess
+          while enhancing my front end skills, have a look around and enjoy!!<br><br>
+          Have any ideas or want to connect? <br><a class="contactMe" id="contactmeTxt">contact me.</a>
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="bg-image img3">
+    <div class="heading">WORK EXPERIENCE</div>
+    <div id="workDiv">
+      <div class="txtWorkEx" id="txtWorkEx">
+        <div class="headingWorkEx" id="gurgaon">
+          <b> SDE at Tek Travels Pvt. Ltd<br>
+            Gurugram Aug 2020 - present
+          </b>
+        </div>
+        Tek Travels is a product based company here at Tek Travels we handle all the software requirements for our
+        parent group which is TBO Group, it is a travel based company leading in B2B travel solutions.
+        My role in the firm is of a software developer I work as a part of back-office team to develop, fix and deliver
+        the company requirements.<br><br>
+        Job Role:<br>&nbsp;SDE <br><br>
+        Technologies Used:<br>&nbsp; C#,&nbsp; ASP.NET,&nbsp; HTML/CSS/JScript,&nbsp; SQL<br>
+      </div>
+      
+      <div class="txtWorkEx" id="txtWorkEx2">
+        <div class="headingWorkEx" style="margin-top:5px;">
+          <b>Research Intern Minxiong, Taiwan<br>
+            National Chung Cheng University June - Aug 2019</b>
+        </div>
+        This was an international internship under the program of TEEP@AsiaPlus where I got an opportunity to travel to
+        Taiwan and research on the process to make an E-Voting system using blockchain technology. It was a great
+        experience where I was able to experince social as well as work culture and this ehnanced my knowledge, helped
+        me
+        learn alot of new things and boosted my career .<br><br>
+        Job Role:<br>&nbsp; Research<br><br>
+        Technologies Used:<br>&nbsp; Ethereum,&nbsp; Solidity,&nbsp; Ganache,&nbsp; MetaMask,&nbsp;
+        Node.js<br>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-image img4" id="projectsDiv" >
+    <div class="heading">PROJECTS</div>
+    <div class="project"  onclick="showMore(1)">
+      <img class="pimg" alt="E-Voting Image" src="eVoting.jpeg" id="i1">
+      <p class="headingP" id="p1">E-Voting System</p>
+      <p class="tech">Blockchain</p>
+      <p class="moreButton" id="b1" >more</p>
+      <p class="pcontent" id="c1">In this project I along with my team did a research on the development of an electronic
+        voting system that can be used by many states or even companies to conduct elections
+        which works on Blockchain technology for this we used Ethereum blockchain open-source to
+        create the system. This project was assigned to me under my research internship at CCU
+        Taiwan.</p>
+    </div>
+    <div class="project" onclick="showMore(2)">
+      <img class="pimg" alt="Vehicle tracking Image" src="vehicle.jpg" id="i2">
+      <p class="headingP" id="p2">Vehicle Tracking System</p>
+      <p class="tech">GPS/Arduino/GSM</p>
+      <p class="moreButton" id="b2" >more</p>
+      <p class="pcontent" id="c2">Wireless communication technologies
+        which enables us to communicate between vehicle to vehicle and vehicle to person by just sending a message from a device to the 
+        tracking system and then it provides us with a geographical location of the first vehicle to the other vehicle/vehicles so that 
+        they can follow it and reach their respective destination with ease</p>
+    </div>
+    <div class="project" onclick="showMore(3)">
+      <img class="pimg" alt="Cocktail hub img" src="cocktail.jfif" id="i3">
+      <p class="headingP" id="p3">Cocktail Hub</p>
+      <p class="tech">HTML/CSS/JS/API</p>
+      <p class="moreButton" id="b3" >more</p>
+      <p class="pcontent" id="c3">This was a project to create a website
+        for a bar where they serve cocktails and mocktails. In this project I've used mainly two api's one of google maps 
+        and another one to show the drinks available in the menu. There's one option in this project where 
+        user can click on random button to select a random drink if they are confused with the wide choice of drinks available.
+      </p>
+    </div>
+    <div class="project"  onclick="showMore(7)">
+      <img class="pimg" alt="Ludo Image" src="ludo.png" id="i7">
+      <p class="headingP" id="p7">Ludo Game</p><p class="tech">HTML/CSS/JS</p><p class="moreButton" id="b7">more</p>
+      <p class="pcontent" id="c7">
+        Ludo is a very famous indian game and almost every have played this once in their lifetime so, in this project
+        I've created this game using basic front end technologies. In the game player can use the dice to start the game it has a random functionality
+        just as the original game. It was a fun project as I myself love to play this game.
+      </p>
+    </div>
+    <div class="project"  onclick="showMore(8)">
+      <img class="pimg" alt="Portfolio website" src="portfolio.png" id="i8">
+      <p class="headingP" id="p8">Portflio Website</p>
+      <p class="tech">HTML/CSS/JS/jQuery</p>
+      <p class="moreButton" id="b8">more</p>
+      <p class="pcontent" id="c8">Created a website to show my skills and present my portfolio. I've used HTML, CSS, Js and jQuery
+        for the development of this website where I've tried to utilise my front end skills in developing portfolio for myself.
+        In this I've made the website responsive and have used a few animations to make the portfolio look more attractive.
+      </p>     
+    </div>
+    <div class="project" onclick="showMore(4)">
+      <img class="pimg" alt="Rick and Morty" src="rNm.jpg" id="i4">
+      <p class="headingP" id="p4">Rick and Morty Fandom</p>
+      <p class="tech">React</p>
+      <p class="moreButton" id="b4">more</p>
+      <p class="pcontent" id="c4">Created a Fandom website for a famous animated american show by the name rick and morty.
+        This is one of my favourite animated TV shows as it is full of science fiction things.
+        This project was created to use the basics of react that I've learnt in my course.
+      </p>
+    </div>
+    <div class="project"  onclick="showMore(6)">
+      <img class="pimg" alt="ToDo List" src="todo.jpg"id="i6">
+      <p class="headingP" id="p6">To-Do List</p><p class="tech">HTML/CSS/JS</p><p class="moreButton" id="b6">more</p>
+      <p class="pcontent" id="c6">Created a To-Do list for creating tasks basically It's a list of tasks you need to complete, or things that you want to do.
+         Most typically, they're organised in order of priority. In this list you can add or delete tasks or even strike them out whatever is best as per one's convinence.</p>
+      
+    </div>
+    
+    <div class="project" onclick="showMore(5)">
+      <img class="pimg" alt="Facebook" src="fb.jpeg" id="i5">
+      <p class="headingP" id="p5">Facebook Home Replica</p>
+      <p class="tech">HTML/CSS</p>
+      <p class="moreButton" id="b5">more</p>
+      <p class="pcontent" id="c5">This project was created using HTML5 and CSS3, here I replicated facebook's home page i.e. signup 
+        and login page.
+      </p>
+    </div>
+    
+    <div class="project githubP" >
+      <a href="https://github.com/vikasgahlaut99 " target="_blank" ><i class="fa fa-github" style="height: 100%;width: 100%;padding: 10px;" ></i></a>
+    </div>
+    
+  </div>
+
+  <div class="bg-image img5">
+    <div id="skillBox">
+      <div class="heading" style="margin-bottom:15px;">SKILLS</div>
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+            <img src="communication.png" alt="Communication Skills" style="width:300px;height:200px">
+          </div>
+          <div class="flip-box-back">
+            <p style="font-size:14px">Communication skills</p>
+            <p style="font-size:11px">I'm pretty good in communicating with an individual or a team and I can fluently
+              speak English, Hindi and Punjabi also I'm learning japanese.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+            <img src="activeListener.png" alt="Listening skills" style="width:300px;height:200px">
+          </div>
+          <div class="flip-box-back">
+            <p style="font-size:13px">Active listening skills</p>
+            <p style="font-size:10px">As important speaking is listening to one is another must have skill in an
+              individual,<br> Active listening is the ability to focus completely on a speaker. </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+            <img src="creativity.jpg" alt="Creativity" style="width:300px;height:200px">
+          </div>
+          <div class="flip-box-back">
+            <p style="font-size:15px">Creativity</p>
+            <p style="font-size:10px">Creativity is the act of turning new and imaginative ideas into reality.<br>I
+              belive
+              I'm very creative which helps me to enjoy things<br>that I do by making them more fun and creative.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+            <img src="managment.jpg" alt="Managment" style="width:300px;height:200px">
+          </div>
+          <div class="flip-box-back">
+            <h2 style="font-size:13px">Management skills</h2>
+            <p style="font-size:10px">Managerial skills are a must for an individual as this qualities helps a
+              person<br>
+              to not only govern the tasks but also the people around them. </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+            <img src="vision.jpg" alt="Vision" style="width:300px;height:200px">
+          </div>
+          <div class="flip-box-back">
+            <p style="font-size:13px">Vision</p>
+            <p style="font-size:10px">Being visionary is essential as it shows the persons intrest in that particular
+              thing. Vision is also a very important soft skill to get a sneak into the future of product.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+            <img src="problemSolving.jpg" alt="Problem Solving" style="width:300px;height:200px">
+          </div>
+          <div class="flip-box-back">
+            <h2 style="font-size:13px">Problem-solving skills</h2>
+            <p style="font-size:10px">Problem-solving skills are qualities that help you determine the source of a
+              problem
+              and quickly find an
+              effective solution.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div id="skillBar">
+      <div class="bar-1">
+        <div class="title" style="color: red">HTML5/CSS3</div>
+        <div class="bar" data-width="85%">
+          <div class="bar-inner" style="background: red"></div>
+          <div class="bar-percent">85%</div>
+        </div>
+      </div>
+
+      <div class="bar-1">
+        <div class="title" style="color: #05cdff;">JavaScript/ jQuery</div>
+        <div class="bar" data-width="75%">
+          <div class="bar-inner" style="background: #00c3ff;"></div>
+          <div class="bar-percent">75%</div>
+        </div>
+      </div>
+
+      <div class="bar-1">
+        <div class="title" style="color: #48ff00;">C/C++</div>
+        <div class="bar" data-width="70%">
+          <div class="bar-inner" style="background: #09ff00;"></div>
+          <div class="bar-percent">70%</div>
+        </div>
+      </div>
+
+      <div class="bar-1">
+        <div class="title" style="color: #d682fd">JAVA</div>
+        <div class="bar" data-width="80%">
+          <div class="bar-inner" style="background: #bc36ce;"></div>
+          <div class="bar-percent">85%</div>
+        </div>
+      </div>
+
+      <div class="bar-1">
+        <div class="title" style="color: #df793e">C#, Asp.Net</div>
+        <div class="bar" data-width="65%">
+          <div class="bar-inner" style="background: #fc8d33;"></div>
+          <div class="bar-percent">65%</div>
+        </div>
+      </div>
+
+      <div class="bar-1">
+        <div class="title" style="color: #ece92f">SQL</div>
+        <div class="bar" data-width="85%">
+          <div class="bar-inner" style="background: #ece92f;"></div>
+          <div class="bar-percent">85%</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-image img6" id="contactDiv">
+    <div id="contactDivBlank" style="height:20px;"></div>
+    <div class="contact">
+      <img src="contact.jpeg" alt="CONTACT ME" style="width: 100%; height: 40%;">
+      <h1>Vikas Gahlaut</h1>
+      <p class="title">Software Development Engineer</p>
+      <p>Tek Travels Pvt. Ltd.</p>
+      <div style="margin: 24px 5px;">
+        <a href="https://github.com/vikasgahlaut99 " style="padding:4px;" target="_blank"><i class="fa fa-github"></i></a>
+        <a href="mailto:vikasgahlaut12@gmail.com" style="padding:4px;" target="_blank"><i class="fa fa-envelope"></i></a>
+        <a href="https://www.instagram.com/gahlautvikas/" style="padding:4px;" target="_blank"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/vikas-gahlaut/" target="_blank"><i class="fa fa-linkedin" style="padding:4px;"></i></a>
+        <a href="callto:#91-8872812680" style="padding:4px;" target="_blank"> <i class="fa fa-phone"></i></a>
+
+      </div>
+      <button><a id="pdf" href="VikasGahlautResume.pdf" style="text-decoration: none;" target="_blank">resume</a>
+    </div>
+  </div>
+
+  <footer style="background-color:#333;opacity:50%; text-align :center; color:#fff;">
+    <p>
+      < />coded by Vikas Gahlaut
+    </p>
+  </footer>
+
+
+</body>
+
+
+</html>
